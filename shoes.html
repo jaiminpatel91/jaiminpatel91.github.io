@@ -1,0 +1,56 @@
+        <header>
+            <div>
+                <a href="index.html"><h1>Cheap Cart</h1></a>
+                <img src="images/cart.png">
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+            <li><a href="#/home">Home</a></li>
+            <li><a href="#/shoes">Shoes</a></li>
+            <li><a href="#/cloth">Cloth</a></li>
+            <li><a href="#/contactus">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <section>
+          <div class="lpanel">
+              
+              <h4>Company Name</h4>  
+              <input type="checkbox" id="puma"/><label for="puma">Puma</label> <br>
+              <input type="checkbox" id="nike"/><label for="nike">Nike</label><br>
+              <input type="checkbox" id="adidas"/><label for="adidas">Adidas</label><br>
+              <input type="checkbox" id="reebok"/><label for="reebok">Reebok</label>
+              
+              <h4>Price</h4>
+              <input type="radio" name="price" value="low" id="low"><label for="low">Low To High</label><br>
+              <input type="radio" name="price" value="High" id="high"><label for="high">High To Low</label>
+            </div>
+            
+            <div class="rpanel">
+                    <div class="item" ng-repeat="x in sdata">
+                        <img src="{{x.img}}">
+                        <h4>{{x.name}} - {{x.model}}</h4>
+                        <h4>$ {{x.price}}</h4>
+                        <button>Add To Cart</button>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="owner-panel">
+                <img src="images/mypic.jpg"/>
+                <h4>Developed By: Jaimin Patel</h4>
+            </div>
+            <div class="social-panel">
+        <a href="https://www.facebook.com/Jaimin-Patel-219580168112810/?ref=hl"><img src="images/fb.png"/></a>
+        <a href="http://jaiminpatel91.blogspot.com/"><img src="images/google.png"/></a>
+        <a href="https://twitter.com/jaiminpatel91"><img src="images/twitter.png"/></a>
+        <a href="https://www.linkedin.com/in/jaiminpatel91"><img src="images/in.png"/></a>
+        <a href="https://www.instagram.com/jaimin_9927/"><img src="images/insta.png"/></a>
+            </div>
+            <div class="credit-panel">
+                <img src="images/creditcrd.png"/>
+            </div>
+        </footer>

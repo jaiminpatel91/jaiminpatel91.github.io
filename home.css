@@ -1,0 +1,142 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px solid red; }
+
+header {
+  height: 90px;
+  background-color: burlywood; }
+  header div {
+    padding: 13px 0px; }
+    header div a {
+      text-decoration: none;
+      color: black; }
+      header div a h1 {
+        display: inline;
+        font-family: "Showcard Gothic";
+        font-size: 55px;
+        padding-left: 8%; }
+    header div img {
+      height: 50px;
+      width: auto;
+      margin-left: 5px; }
+
+nav {
+  background-color: brown; }
+  nav ul {
+    margin: 0px 70px; }
+    nav ul li {
+      display: inline-block;
+      margin-left: 40px;
+      align-content: center;
+      padding: 6px 0px; }
+      nav ul li a {
+        text-decoration: none;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 20px;
+        color: white; }
+      nav ul li a:hover {
+        background-color: burlywood;
+        color: brown; }
+
+section .slider-holder {
+  overflow: hidden; }
+  section .slider-holder img {
+    width: 100%;
+    height: 550px; }
+section .info-panel {
+  width: 40%;
+  margin: 5% 0%;
+  margin-left: 10%;
+  font-size: 20px;
+  float: left;
+  color: grey; }
+  section .info-panel input, section .info-panel textarea {
+    border: 1px solid lightgrey;
+    margin: 10px 0px;
+    height: 30px;
+    width: 190%; }
+  section .info-panel textarea {
+    height: 90px; }
+  section .info-panel button {
+    background-color: brown;
+    color: burlywood;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px; }
+section .contact-panel {
+  width: 40%;
+  margin: 6% 0%;
+  margin-right: 10%;
+  display: inline-block; }
+  section .contact-panel p {
+    font-size: 18px;
+    color: grey; }
+section .lpanel {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 18px;
+  float: left; }
+  section .lpanel h4 {
+    padding: 10px 0px; }
+  section .lpanel input {
+    margin: 7px 0px;
+    margin-right: 5px; }
+section .rpanel {
+  width: 81.5%;
+  display: inline-block;
+  padding: 20px 20px;
+  border-left: 3px solid brown; }
+  section .rpanel .item {
+    padding: 30px 36px;
+    float: left; }
+    section .rpanel .item img {
+      width: 201px;
+      height: 190px; }
+    section .rpanel .item h4 {
+      text-align: center; }
+    section .rpanel .item button {
+      padding: 10px;
+      background-color: brown;
+      color: burlywood;
+      border-radius: 10px;
+      margin: auto;
+      width: 100%; }
+    section .rpanel .item button:hover {
+      background-color: burlywood;
+      color: brown; }
+
+footer {
+  height: 150px;
+  margin-top: -5px;
+  background-color: burlywood; }
+  footer .credit-panel {
+    float: right;
+    display: inline-block; }
+    footer .credit-panel img {
+      height: 100px;
+      width: auto;
+      padding: 25px; }
+  footer .owner-panel {
+    display: inline-block;
+    margin: 25px;
+    width: 34%;
+    align-content: center; }
+    footer .owner-panel img {
+      height: 80px;
+      border-radius: 70px; }
+    footer .owner-panel img:hover {
+      border-radius: 0px; }
+    footer .owner-panel h4 {
+      display: inline-block;
+      color: brown; }
+  footer .social-panel {
+    display: inline-block;
+    margin: 28px 0px; }
+    footer .social-panel img {
+      margin-left: 10px; }
+    footer .social-panel img:hover {
+      opacity: 0.4; }
+
+/*# sourceMappingURL=home.css.map */
