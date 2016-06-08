@@ -128,6 +128,8 @@ footer {
       border-radius: 70px; }
     footer .owner-panel img:hover {
       border-radius: 0px; }
+    footer .owner-panel #dp1 {
+      display: none; }
     footer .owner-panel h4 {
       display: inline-block;
       color: brown; }
@@ -138,5 +140,129 @@ footer {
       margin-left: 10px; }
     footer .social-panel img:hover {
       opacity: 0.4; }
+
+@media (min-width: 320px) and (max-width: 886px) {
+  header {
+    height: 60px;
+    background-color: burlywood; }
+    header div a h1 {
+      font-size: 40px; }
+    header div img {
+      height: 40px;
+      width: auto;
+      margin-left: 5px; }
+
+  nav {
+    background-color: brown; }
+    nav ul {
+      margin: 0px; }
+      nav ul li {
+        display: inline;
+        padding: 6px 4px;
+        margin-left: 10px; }
+        nav ul li a {
+          text-decoration: none;
+          padding: 7px 0px;
+          font-size: 20px;
+          color: white; }
+        nav ul li a:hover {
+          background-color: burlywood;
+          color: brown; }
+
+  section .slider-holder {
+    overflow: hidden; }
+    section .slider-holder img {
+      width: 100%;
+      height: 350px; }
+  section .info-panel {
+    width: 80%;
+    margin: auto both;
+    font-size: 16px;
+    float: left;
+    color: grey; }
+    section .info-panel input, section .info-panel textarea {
+      border: 1px solid lightgrey;
+      margin: 7px 0px;
+      height: 25px;
+      width: 160%; }
+    section .info-panel textarea {
+      height: 50px; }
+    section .info-panel button {
+      background-color: brown;
+      color: burlywood;
+      padding: 7px;
+      border-radius: 10px;
+      font-size: 16px; }
+  section .contact-panel {
+    width: 80%;
+    margin: auto both;
+    display: inline-block; }
+    section .contact-panel p {
+      font-size: 18px;
+      color: grey; }
+  section .lpanel {
+    display: none; }
+  section .rpanel {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 5px;
+    border: 0px; }
+    section .rpanel .item {
+      padding: 5px 10px;
+      float: left; }
+      section .rpanel .item img {
+        width: 150px;
+        height: 160px; }
+      section .rpanel .item h4 {
+        text-align: center; }
+      section .rpanel .item button {
+        padding: 5px;
+        background-color: brown;
+        color: burlywood;
+        border-radius: 10px;
+        margin: auto;
+        width: 100%; }
+      section .rpanel .item button:hover {
+        background-color: burlywood;
+        color: brown; }
+
+  footer {
+    height: 60px;
+    margin-top: -5px;
+    background-color: burlywood; }
+    footer .credit-panel {
+      float: right;
+      display: inline-block; }
+      footer .credit-panel img {
+        height: 25px;
+        width: auto;
+        padding: 15px; }
+    footer .owner-panel {
+      display: inline-block;
+      margin: 12px;
+      width: 30%;
+      align-content: center; }
+      footer .owner-panel img {
+        width: 25px;
+        height: 30px;
+        border-radius: 70px; }
+      footer .owner-panel img:hover {
+        border-radius: 0px; }
+      footer .owner-panel #dp {
+        display: none; }
+      footer .owner-panel #dp1 {
+        display: block; }
+      footer .owner-panel h4 {
+        display: inline-block;
+        color: brown;
+        font-size: 10px; }
+    footer .social-panel {
+      display: inline-block;
+      margin: 10px 0px; }
+      footer .social-panel img {
+        margin-left: 5px;
+        width: 20px; }
+      footer .social-panel img:hover {
+        opacity: 0.4; } }
 
 /*# sourceMappingURL=home.css.map */
