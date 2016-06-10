@@ -24,12 +24,12 @@
               <input type="checkbox" name="gname" id="female"><label for="female">Female</label><br>
               
               <h4>Price</h4>
-              <input type="radio" name="price" value="low" id="low"><label for="low">Low To High</label><br>
-              <input type="radio" name="price" value="High" id="high"><label for="high">High To Low</label>
+              <input type="radio" name="price" ng-model="cdata.price" value="price" id="low"><label for="low">Low To High</label><br>
+              <input type="radio" name="price" ng-model="cdata.price" value="-price" id="high"><label for="high">High To Low</label>
             </div>
             
             <div class="rpanel">
-                    <div class="item" ng-repeat="x in cdata">
+                    <div class="item" ng-repeat="x in cdata | orderBy:cdata.price">
                         <img src="{{x.img}}">
                         <h4>{{x.name}} - {{x.model}}</h4>
                         <h4>$ {{x.price}}</h4>
