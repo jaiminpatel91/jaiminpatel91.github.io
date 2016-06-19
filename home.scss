@@ -31,11 +31,13 @@ nav{
     background-color: brown;
     ul{
         margin: 0px 70px;
+        .checkout{
+                float: right;
+            }
         li{
             display: inline-block;
-            margin-left: 40px;
             align-content: center;
-            padding: 6px 0px;
+            padding: 6px 20px;
             a{
                 text-decoration: none;
                 text-align: center;
@@ -43,8 +45,13 @@ nav{
                 font-size: 20px;
                 color: white;
             }
-            a:hover{
-                background-color: burlywood;
+        }
+        li:first-of-type{
+            margin-left: 25px;
+        }
+        li:hover{
+            background-color: burlywood;
+            a{
                 color: brown;
             }
         }
@@ -183,7 +190,7 @@ footer{
     }
 }
 
-@media (min-width: 320px) and (max-width: 886px){
+@media (min-width: 330px) and (max-width: 886px){
     header{
     height: 60px;
     background-color: burlywood;
@@ -203,24 +210,23 @@ footer{
 nav{
     background-color: brown;
     ul{
-        margin: 0px;
+        margin: 0px -20px;
+        .checkout{
+                float: inherit; 
+            }
         li{
             display: inline;
             padding: 6px 4px;
-            margin-left: 10px;
             a{
                 text-decoration: none;
                 padding: 7px 0px;
-                font-size: 20px;
+                font-size: 18px;
                 color: white;
             }
-            a:hover{
-                background-color: burlywood;
-                color: brown;
             }
         }
     }
-}
+
 section{
     .slider-holder
         {

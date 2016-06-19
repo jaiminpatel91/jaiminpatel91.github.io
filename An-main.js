@@ -1,3 +1,4 @@
+
 var app = angular.module("myapp", ['ngRoute']);
 
 app.config(['$routeProvider',function($routeProvider) {
@@ -16,8 +17,12 @@ app.config(['$routeProvider',function($routeProvider) {
 	})
 	.when('/contactus', {
 		templateUrl: 'contactus.html',
-		controller: 'empctrl'
+		controller: 'cloth'
 	})
+    .when('/checkout',{
+        templateUrl: 'checkout.html',
+        controller: 'checkout'
+    })
 	.otherwise({
 		redirectTo: '/home'
 	});
@@ -26,7 +31,7 @@ app.config(['$routeProvider',function($routeProvider) {
 app.controller('shoes',function($scope){
     
 	$scope.sdata = [
-	{img: 'images/one.jpg', name: 'Nike', model: '001', price: 49.99},
+	{img: 'images/one.jpg', name: 'Nike', model: '001', price: 9.99},
 	{img: 'images/two.jpg', name: 'Puma', model: '002', price: 78.99},
 	{img: 'images/three.jpg', name: 'Adidas', model: '003', price: 22.99},
 	{img: 'images/four.jpg', name: 'Reebok', model: '004', price: 99.99},
@@ -40,17 +45,18 @@ app.controller('shoes',function($scope){
 });
 
 app.controller('cloth',function($scope){
+    
 	$scope.cdata = [
-	{img: 'images/tone.jpg', name: 'Nike', model: '001', price: 49.99, category: 'male'},
-	{img: 'images/jone.jpg', name: 'Puma', model: '002', price: 78.99, category: 'male'},
-	{img: 'images/ttwo.jpg', name: 'Adidas', model: '003', price: 22.99, category: 'male'},
+	{img: 'images/tone.jpg', name: 'Nike', model: '001', price: 49.99, category: 'men'},
+	{img: 'images/jone.jpg', name: 'Puma', model: '002', price: 78.99, category: 'men'},
+	{img: 'images/ttwo.jpg', name: 'Adidas', model: '003', price: 22.99, category: 'men'},
 	{img: 'images/jtwo.jpg', name: 'Reebok', model: '004', price: 99.99, category: 'female'},
-    {img: 'images/tthree.jpg', name: 'Nike', model: '005', price: 148.99, category: 'male'},
+    {img: 'images/tthree.jpg', name: 'Nike', model: '005', price: 148.99, category: 'men'},
     {img: 'images/jthree.jpg', name: 'Puma', model: '006', price: 34.99, category: 'female'},
-    {img: 'images/tfour.jpg', name: 'Adidas', model: '007', price: 78.99, category: 'male'},
+    {img: 'images/tfour.jpg', name: 'Adidas', model: '007', price: 78.99, category: 'men'},
     {img: 'images/jfour.jpg', name: 'Reebok', model: '008', price: 88.99, category: 'female'},
     {img: 'images/jfive.jpg', name: 'Reebok', model: '008', price: 88.99, category: 'female'},
-    ];
+    ]; 
 });
 
 
@@ -60,6 +66,7 @@ var myIndex = 0;
 slide();
 
 function slide() {
+    
     var i;
     var x = document.getElementsByClassName("slider");
     for (i = 0; i < x.length; i++) {
@@ -72,3 +79,7 @@ function slide() {
 }
 });
 
+
+app.controller('checkout',function($scope){
+    
+})
